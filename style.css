@@ -1,0 +1,204 @@
+.gradient-background {
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-size: 400% 400%;
+    animation: animate 5s ease infinite;
+    -webkit-animation: animate 5s ease infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#title {
+    padding: 0px;
+    margin: 0px;
+}
+
+#but {
+    background-color: white;
+    color: black;
+    border: 2px rgb(221, 221, 221) solid;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+#but:hover {
+    opacity: 0.6;
+}
+
+#but2 {
+    border: 2px rgb(221, 221, 221) solid;
+    color: black;
+    transition: 0.3s;
+}
+
+#but2:hover {
+    opacity: 0.6;
+}
+
+.grid-container2 {
+    background-color: #e9ecef;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    height: auto;
+    padding: 20px;
+}
+
+#h31 {
+    text-align: center;
+}
+
+.anjing-review {
+    text-align: center;
+}
+
+#gambar1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.perusahaan-logo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.divider {
+    height: 100px;
+}
+
+#but3 {
+    border: 2px solid #21252908;
+}
+
+#but4 {
+    border: 2px solid #21252908;
+    background-color: #212529;
+}
+
+#but5 {
+    border: 2px solid #21252908;
+    background-color: #212529;
+}
+
+#card3 {
+    border: 1px solid #000000 !important;
+    z-index: 1;
+}
+
+#card3-header {
+    z-index: 1;
+    color: white;
+    background-color: #000000 !important;
+}
+
+#pricing {
+    padding: 50px;
+}
+
+#footer {
+    margin-bottom: 0px;
+}
+
+.container {
+    height: 50vh;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        height: auto;
+    }
+
+    #features {
+        padding-top: 200px;
+    }
+
+    .grid-container2 {
+        grid-template-columns: 1fr;
+    }
+
+    .gradient-background {
+        height: auto;
+    }
+
+    .perusahaan-logo img {
+        width: 100px;
+        height: auto;
+    }
+
+    .d-grid.gap-2.d-md-flex.justify-content-md-start {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Additional styles for better iPad responsiveness */
+    #title {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .grid-container2 {
+        padding: 10px;
+    }
+
+    #pricing {
+        padding: 20px;
+    }
+
+    #footer {
+        padding: 10px;
+    }
+
+    .perusahaan-logo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perusahaan-logo img {
+        margin-bottom: 10px;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+    }
+
+    #features{
+        padding-top: 200px;
+    }
+
+    .grid-container2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .gradient-background {
+        height: auto;
+    }
+
+    .perusahaan-logo img {
+        width: 100px;
+        height: auto;
+    }
+
+    .d-grid.gap-2.d-md-flex.justify-content-md-start {
+        flex-direction: column;
+        align-items: center;
+    }
+}
